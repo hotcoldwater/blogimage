@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "task": "render_single",
+  "post_title": "투자 심리",
+  "large_category": "투자",
+  "small_category": "인사이트",
+  "cover_title": ["수익보다 먼저", "뇌가 망가진다"],
+  "subtitle": ["전망이론으로 보는", "투자 심리"]
+}

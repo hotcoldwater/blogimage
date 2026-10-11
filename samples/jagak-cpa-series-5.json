@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.1",
+  "task": "render_series",
+  "theme": "jagak",
+  "post_title": "자각 CPA 5장 예제",
+  "large_category": "CPA",
+  "small_category": "취업·커리어",
+  "canvas": { "width": 1080, "height": 1080 },
+  "cards": [
+    {
+      "card_no": 1, "role": "cover", "layout": "cover", "image_name": "01_cover.png",
+      "insert_token": "[[IMAGE_01:COVER:01_cover.png]]", "title": ["회계사 커리어", "어디서 시작할까"],
+      "subtitle": ["채용 조건과 성장 경로를", "차례대로 살펴봅니다"]
+    },
+    {
+      "card_no": 2, "role": "summary", "layout": "bullet_3", "image_name": "02_summary.png",
+      "insert_token": "[[IMAGE_02:SUMMARY:02_summary.png]]", "title": ["취업 준비", "핵심 세 가지"],
+      "items": ["관심 직무를 정합니다", "채용 시기를 확인합니다", "필요 경험을 준비합니다"]
+    },
+    {
+      "card_no": 3, "role": "numbers", "layout": "numbers", "image_name": "03_numbers.png",
+      "insert_token": "[[IMAGE_03:NUMBERS:03_numbers.png]]", "title": ["준비 과정을", "숫자로 확인합니다"],
+      "numbers": [{ "value": "3단계", "label": "준비 과정" }, { "value": "2가지", "label": "비교 기준" }]
+    },
+    {
+      "card_no": 4, "role": "process", "layout": "process_4", "image_name": "04_process.png",
+      "insert_token": "[[IMAGE_04:PROCESS:04_process.png]]", "title": ["커리어 준비", "네 단계"],
+      "steps": ["관심 분야를 정합니다", "채용 공고를 확인합니다", "경험을 정리합니다", "지원 기준을 점검합니다"]
+    },
+    {
+      "card_no": 5, "role": "conclusion", "layout": "conclusion", "image_name": "05_conclusion.png",
+      "insert_token": "[[IMAGE_05:CONCLUSION:05_conclusion.png]]", "title": ["첫 선택보다", "성장 경로가 중요합니다"],
+      "body": ["현재 조건과 목표를", "함께 놓고 판단하세요"]
+    }
+  ]
+}

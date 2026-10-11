@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "task": "render_series",
+  "post_title": "ISA 개편안 | 일본은 키우는데 한국은 왜 거꾸로 가나",
+  "large_category": "투자",
+  "small_category": "인사이트",
+  "canvas": { "width": 1080, "height": 1080 },
+  "cards": [
+    {
+      "card_no": 1,
+      "role": "cover",
+      "layout": "cover",
+      "image_name": "01_cover.png",
+      "insert_token": "[[IMAGE_01:COVER:01_cover.png]]",
+      "title": ["한국 ISA", "왜 거꾸로 가나"],
+      "subtitle": ["장기투자 제한과", "복리효과 축소"]
+    },
+    {
+      "card_no": 2,
+      "role": "summary",
+      "layout": "bullet_3",
+      "image_name": "02_summary.png",
+      "insert_token": "[[IMAGE_02:SUMMARY:02_summary.png]]",
+      "title": ["이번 개편의", "핵심 3가지"],
+      "items": ["장기투자 유연성 축소", "계좌 활용 범위 제한", "일본 NISA와 반대 방향"]
+    },
+    {
+      "card_no": 3,
+      "role": "comparison",
+      "layout": "compare_2col",
+      "image_name": "03_comparison.png",
+      "insert_token": "[[IMAGE_03:COMPARISON:03_comparison.png]]",
+      "title": ["한국과 일본은", "어디가 다를까"],
+      "left": { "label": "한국 ISA", "items": ["계좌 활용 제약 확대", "장기투자 유연성 축소"] },
+      "right": { "label": "일본 NISA", "items": ["비과세 투자 확대", "장기 자산형성 지원"] }
+    },
+    {
+      "card_no": 4,
+      "role": "process",
+      "layout": "process_4",
+      "image_name": "04_process.png",
+      "insert_token": "[[IMAGE_04:PROCESS:04_process.png]]",
+      "title": ["제도를 살피는", "네 단계"],
+      "steps": ["적용 대상을 확인한다", "계좌 조건을 비교한다", "장기 효과를 계산한다", "대안을 함께 검토한다"]
+    },
+    {
+      "card_no": 5,
+      "role": "conclusion",
+      "layout": "conclusion",
+      "image_name": "05_conclusion.png",
+      "insert_token": "[[IMAGE_05:CONCLUSION:05_conclusion.png]]",
+      "title": ["장기투자를 말하면서", "유연성을 줄였다"],
+      "body": ["투자를 오래 유지하게 만들려면", "제약보다 활용 가능성을 넓혀야 한다."]
+    }
+  ]
+}

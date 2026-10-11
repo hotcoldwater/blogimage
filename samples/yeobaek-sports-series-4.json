@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.1",
+  "task": "render_series",
+  "theme": "yeobaek",
+  "post_title": "여백 스포츠 E스포츠 4장 예제",
+  "large_category": "스포츠",
+  "small_category": "E스포츠",
+  "canvas": { "width": 1080, "height": 1080 },
+  "cards": [
+    {
+      "card_no": 1,
+      "role": "cover",
+      "layout": "cover",
+      "image_name": "01_cover.png",
+      "insert_token": "[[IMAGE_01:COVER:01_cover.png]]",
+      "title": ["E스포츠를 읽는", "새로운 기준"],
+      "subtitle": ["경기와 산업의 변화를", "차분하게 살펴봅니다"]
+    },
+    {
+      "card_no": 2,
+      "role": "summary",
+      "layout": "bullet_3",
+      "image_name": "02_summary.png",
+      "insert_token": "[[IMAGE_02:SUMMARY:02_summary.png]]",
+      "title": ["핵심 흐름", "세 가지"],
+      "items": ["리그 운영 구조를 확인합니다", "선수와 팀의 변화를 봅니다", "산업 지표를 함께 살펴봅니다"]
+    },
+    {
+      "card_no": 3,
+      "role": "comparison",
+      "layout": "compare_2col",
+      "image_name": "03_comparison.png",
+      "insert_token": "[[IMAGE_03:COMPARISON:03_comparison.png]]",
+      "title": ["경기와 산업", "함께 보기"],
+      "left": { "label": "경기", "items": ["팀 전력과 메타", "대회 일정과 결과"] },
+      "right": { "label": "산업", "items": ["리그와 구단 운영", "시청 지표와 시장"] }
+    },
+    {
+      "card_no": 4,
+      "role": "conclusion",
+      "layout": "conclusion",
+      "image_name": "04_conclusion.png",
+      "insert_token": "[[IMAGE_04:CONCLUSION:04_conclusion.png]]",
+      "title": ["한 장면보다", "흐름을 봅니다"],
+      "body": ["경기와 산업을 함께 보면", "변화의 방향이 보입니다"]
+    }
+  ]
+}

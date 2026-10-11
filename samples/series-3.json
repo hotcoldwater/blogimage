@@ -1,0 +1,37 @@
+{
+  "schema_version": "2.0",
+  "task": "render_series",
+  "post_title": "3장 예제 | 투자 원칙",
+  "large_category": "투자",
+  "small_category": "투자기초",
+  "canvas": { "width": 1080, "height": 1080 },
+  "cards": [
+    {
+      "card_no": 1,
+      "role": "cover",
+      "layout": "cover",
+      "image_name": "01_cover.png",
+      "insert_token": "[[IMAGE_01:COVER:01_cover.png]]",
+      "title": ["흔들리지 않는", "투자 원칙"],
+      "subtitle": ["처음 시작할 때", "확인할 기준"]
+    },
+    {
+      "card_no": 2,
+      "role": "summary",
+      "layout": "bullet_3",
+      "image_name": "02_summary.png",
+      "insert_token": "[[IMAGE_02:SUMMARY:02_summary.png]]",
+      "title": ["먼저 확인할", "핵심 3가지"],
+      "items": ["목표 기간을 정한다", "감당할 위험을 확인한다", "원칙에 맞춰 반복한다"]
+    },
+    {
+      "card_no": 3,
+      "role": "conclusion",
+      "layout": "conclusion",
+      "image_name": "03_conclusion.png",
+      "insert_token": "[[IMAGE_03:CONCLUSION:03_conclusion.png]]",
+      "title": ["원칙은 예측보다", "오래 남는다"],
+      "body": ["정한 기준을 지키는 일이", "투자의 출발점이다."]
+    }
+  ]
+}

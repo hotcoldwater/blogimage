@@ -1,0 +1,185 @@
+* { box-sizing: border-box; }
+html, body { width: 1080px; height: 1080px; margin: 0; overflow: hidden; background: var(--upper-background); }
+body {
+  font-family: Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+}
+.series-card { position: relative; width: 1080px; height: 1080px; overflow: hidden; color: var(--primary); background: var(--upper-background); }
+.category-header { position: absolute; z-index: 4; top: 50px; left: 54px; right: 54px; height: 92px; }
+.category-badge {
+  position: absolute; z-index: 2; top: 0; left: 0; display: flex; min-width: 176px; height: 82px;
+  align-items: center; justify-content: center; padding: 0 32px; border-radius: 14px;
+  color: var(--upper-background); background: var(--primary); font-size: 40px; font-weight: 800;
+  letter-spacing: -.04em; white-space: nowrap;
+}
+.category-line { position: absolute; top: 65px; left: 170px; right: 0; height: 3px; background: var(--primary); }
+.category-line span { position: absolute; top: 50%; right: -1px; width: 22px; height: 22px; border-radius: 50%; background: var(--primary); transform: translateY(-50%); }
+.small-category { position: absolute; z-index: 2; top: 4px; right: 7px; font-size: 31px; font-weight: 750; letter-spacing: -.035em; white-space: nowrap; }
+.forced-line { display: block; white-space: nowrap; }
+.fit-text { overflow: hidden; }
+.card-content { position: absolute; top: 160px; right: 64px; bottom: 80px; left: 64px; }
+.card-title {
+  display: flex; height: 188px; margin: 0 0 26px; flex-direction: column; align-items: center; justify-content: center;
+  color: var(--primary); font-size: 96px; font-weight: 900; line-height: 1.16; letter-spacing: -.052em;
+  text-align: center; word-break: keep-all;
+}
+.brand-footer {
+  position: absolute; right: 0; bottom: 0; left: 0; display: flex; height: 70px; align-items: center;
+  justify-content: center; color: var(--lower-foreground); background: var(--primary); font-size: 25px;
+  font-weight: 700; letter-spacing: -.03em;
+}
+
+/* cover: the original upper/lower split, scaled from 1200px to 1080px */
+.series-card.cover-card .category-header { top: 52px; }
+.cover-card .cover-title {
+  position: absolute; top: 180px; right: 68px; left: 68px; height: 430px; margin: 0;
+  font-size: 160px; line-height: 1.2;
+}
+.cover-lower { position: absolute; right: 0; bottom: 0; left: 0; height: 410px; color: var(--lower-foreground); background: var(--lower-background); }
+.cover-row { position: absolute; top: 58px; right: 76px; left: 76px; display: grid; grid-template-columns: 194px 2px minmax(0, 1fr); align-items: center; column-gap: 42px; }
+.icon-wrap { display: flex; width: 194px; height: 194px; align-items: center; justify-content: center; }
+.icon-wrap svg { width: 170px; height: 170px; overflow: visible; }
+.vertical-divider { width: 2px; height: 184px; background: var(--lower-foreground); opacity: .88; }
+.cover-subtitle {
+  display: flex; height: 238px; flex-direction: column; justify-content: center; color: var(--lower-foreground);
+  font-size: 82px; font-weight: 750; line-height: 1.45; letter-spacing: -.042em; word-break: keep-all;
+}
+.cover-brand { position: absolute; right: 0; bottom: 42px; left: 0; font-size: 26px; font-weight: 700; text-align: center; letter-spacing: -.03em; }
+
+.bullet-list { display: grid; height: 520px; gap: 22px; margin: 0; padding: 0; list-style: none; }
+.bullet-item {
+  display: grid; min-width: 0; grid-template-columns: 76px minmax(0, 1fr); align-items: center; padding: 18px 30px;
+  border: 3px solid color-mix(in srgb, var(--primary) 34%, transparent); border-radius: 22px; background: #fff9;
+}
+.bullet-index { display: flex; width: 52px; height: 52px; align-items: center; justify-content: center; border-radius: 50%; color: var(--lower-foreground); background: var(--primary); font-size: 26px; font-weight: 850; }
+.bullet-text { display: flex; height: 108px; align-items: center; font-size: 48px; font-weight: 760; line-height: 1.3; letter-spacing: -.035em; word-break: keep-all; overflow-wrap: anywhere; }
+
+.compare-grid { display: grid; height: 526px; grid-template-columns: 1fr 1fr; gap: 28px; }
+.compare-side { min-width: 0; padding: 26px; border: 3px solid var(--primary); border-radius: 24px; background: #fff8; }
+.compare-side.right { color: var(--lower-foreground); background: var(--primary); }
+.compare-label { display: flex; height: 76px; align-items: center; justify-content: center; margin-bottom: 18px; border-bottom: 3px solid currentColor; font-size: 48px; font-weight: 850; text-align: center; }
+.compare-items { display: grid; gap: 16px; margin: 0; padding: 0; list-style: none; }
+.compare-item { display: flex; height: 112px; align-items: center; justify-content: center; padding: 10px 14px; border-radius: 14px; background: color-mix(in srgb, currentColor 8%, transparent); font-size: 38px; font-weight: 720; line-height: 1.32; text-align: center; word-break: keep-all; overflow-wrap: anywhere; }
+.compare-side.right .compare-item { background: #fff2; }
+
+.process-list { display: grid; height: 526px; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.process-step { display: grid; min-width: 0; grid-template-columns: 94px minmax(0, 1fr); align-items: center; border-radius: 20px; background: color-mix(in srgb, var(--primary) 10%, transparent); }
+.step-number { display: flex; width: 66px; height: 66px; align-items: center; justify-content: center; margin-left: 18px; border-radius: 18px; color: var(--lower-foreground); background: var(--primary); font-size: 30px; font-weight: 900; }
+.step-text { display: flex; height: 108px; align-items: center; padding: 8px 24px 8px 10px; font-size: 46px; font-weight: 760; line-height: 1.28; word-break: keep-all; overflow-wrap: anywhere; }
+
+.cause-effect-grid { display: grid; height: 526px; grid-template-columns: minmax(0, 1fr) 72px minmax(0, 1fr); align-items: stretch; gap: 16px; }
+.cause-effect-column { display: grid; gap: 16px; }
+.cause-effect-item { display: flex; min-height: 0; align-items: center; justify-content: center; padding: 18px; border: 3px solid var(--primary); border-radius: 20px; font-size: 38px; font-weight: 760; line-height: 1.3; text-align: center; word-break: keep-all; overflow-wrap: anywhere; }
+.cause-effect-column.effects .cause-effect-item { color: var(--lower-foreground); background: var(--primary); }
+.direction-arrow { display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 72px; font-weight: 900; }
+
+.numbers-grid { display: grid; height: 526px; align-items: stretch; gap: 22px; }
+.numbers-grid.count-1 { grid-template-columns: minmax(0, 1fr); }
+.numbers-grid.count-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.numbers-grid.count-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.number-block { display: flex; min-width: 0; flex-direction: column; align-items: center; justify-content: center; padding: 28px 20px; border: 3px solid var(--primary); border-radius: 28px; background: #fff9; }
+.number-value { display: flex; width: 100%; height: 160px; align-items: center; justify-content: center; color: var(--accent); font-size: 94px; font-weight: 950; line-height: 1; text-align: center; overflow-wrap: anywhere; }
+.number-label { display: flex; width: 100%; height: 136px; align-items: center; justify-content: center; margin-top: 20px; font-size: 38px; font-weight: 740; line-height: 1.35; text-align: center; word-break: keep-all; overflow-wrap: anywhere; }
+
+.conclusion-panel { display: flex; height: 526px; flex-direction: column; align-items: center; justify-content: center; padding: 38px 46px; border-radius: 28px; color: var(--lower-foreground); background: var(--primary); }
+.conclusion-body { display: grid; width: 100%; gap: 18px; }
+.conclusion-line { display: flex; height: 138px; align-items: center; justify-content: center; font-size: 50px; font-weight: 730; line-height: 1.4; text-align: center; word-break: keep-all; overflow-wrap: anywhere; }
+.conclusion-items { display: grid; width: 100%; gap: 18px; margin: 0; padding: 0; list-style: none; }
+.conclusion-item { display: flex; height: 116px; align-items: center; justify-content: center; padding: 12px 22px; border: 2px solid #ffffff66; border-radius: 16px; font-size: 42px; font-weight: 730; line-height: 1.32; text-align: center; word-break: keep-all; overflow-wrap: anywhere; }
+
+/* JSON 2.1 insurance theme */
+.insurance-card { color: var(--text); background: var(--upper-background); }
+.insurance-card .insurance-category-header { top: 50px; height: 74px; }
+.insurance-card .insurance-category-badge {
+  position: relative; display: inline-flex; min-width: 0; height: 64px; gap: 14px; padding: 0 24px;
+  border-radius: 32px; color: var(--primary); background: var(--soft); font-size: 30px; font-weight: 760;
+}
+.insurance-badge-icon { display: flex; width: 30px; height: 30px; align-items: center; justify-content: center; }
+.insurance-badge-icon svg { width: 30px; height: 30px; }
+.insurance-category-line { position: absolute; top: 31px; left: 264px; right: 0; height: 2px; background: var(--border); }
+
+.insurance-cover-content { position: absolute; top: 174px; right: 76px; bottom: 64px; left: 76px; }
+.insurance-cover-icon {
+  display: flex; width: 84px; height: 84px; align-items: center; justify-content: center; margin-top: 52px;
+  border-radius: 26px; color: var(--primary); background: var(--soft);
+}
+.insurance-cover-icon svg { width: 52px; height: 52px; }
+.insurance-card .insurance-cover-title {
+  position: static; height: 360px; margin: 42px 0 16px; align-items: flex-start; justify-content: center;
+  color: var(--primary); font-size: 132px; line-height: 1.2; text-align: left;
+}
+.insurance-cover-subtitle {
+  display: flex; height: 164px; flex-direction: column; justify-content: center; color: var(--muted);
+  font-size: 62px; font-weight: 650; line-height: 1.4; letter-spacing: -.035em; word-break: keep-all;
+}
+.insurance-cover-brand { position: absolute; right: 0; bottom: 0; color: var(--muted); font-size: 25px; font-weight: 650; letter-spacing: -.025em; }
+
+/* JSON 2.1 yeobaek keeps the shared editorial layout and uses charcoal copy with category-color accents. */
+.yeobaek-card .insurance-cover-title,
+.yeobaek-card:not(.conclusion-card) .insurance-heading .card-title { color: var(--text); }
+.yeobaek-card .insurance-cover-title { font-weight: 800; }
+.yeobaek-card .insurance-cover-icon { border: 1px solid var(--border); }
+.yeobaek-card .insurance-category-line { background: var(--border); }
+
+.jagak-card .jagak-cover-title { color: var(--primary); }
+.jagak-card .jagak-cover-lower { color: var(--lower-foreground); background: var(--primary); }
+.jagak-card .jagak-cover-icon {
+  width: 194px; height: 194px; border-radius: 48px; color: var(--primary); background: var(--soft);
+}
+.jagak-card .jagak-cover-icon svg { width: 118px; height: 118px; }
+.jagak-card .vertical-divider { background: var(--lower-foreground); }
+.jagak-card .cover-subtitle,
+.jagak-card .cover-brand { color: var(--lower-foreground); }
+
+.insurance-card .card-content { top: 162px; right: 70px; bottom: 64px; left: 70px; }
+.insurance-heading { display: grid; height: 188px; grid-template-columns: 72px minmax(0, 1fr); align-items: center; gap: 24px; margin-bottom: 26px; }
+.insurance-card-icon {
+  display: flex; width: 64px; height: 64px; align-items: center; justify-content: center;
+  border-radius: 20px; color: var(--primary); background: var(--soft);
+}
+.insurance-card-icon svg { width: 42px; height: 42px; }
+.insurance-heading .card-title {
+  height: 188px; margin: 0; align-items: flex-start; color: var(--primary); font-size: 82px;
+  font-weight: 820; line-height: 1.18; text-align: left;
+}
+
+.insurance-card .bullet-list { gap: 12px; }
+.insurance-card .bullet-item {
+  padding: 18px 28px; border: 1px solid var(--border); border-radius: 16px; background: var(--surface);
+}
+.insurance-card .bullet-index { color: var(--primary); background: var(--soft); }
+.insurance-card .bullet-text { color: var(--text); font-weight: 680; }
+
+.insurance-card .compare-grid { gap: 20px; }
+.insurance-card .compare-side { padding: 28px; border: 1px solid var(--border); background: var(--soft); }
+.insurance-card .compare-side.right { color: var(--text); background: var(--surface); }
+.insurance-card .compare-label { color: var(--primary); border-color: var(--border); }
+.insurance-card .compare-item,
+.insurance-card .compare-side.right .compare-item { color: var(--text); background: transparent; }
+
+.insurance-card .process-list { position: relative; gap: 12px; }
+.insurance-card .process-step { border: 1px solid var(--border); background: var(--surface); }
+.insurance-card .step-number { color: var(--primary); background: var(--soft); }
+.insurance-card .step-text { color: var(--text); font-weight: 680; }
+
+.insurance-card .cause-effect-grid { gap: 14px; }
+.insurance-card .cause-effect-item { color: var(--text); border: 1px solid var(--border); background: var(--surface); }
+.insurance-card .cause-effect-column.effects .cause-effect-item { color: var(--text); background: var(--soft); }
+.insurance-card .direction-arrow { color: var(--secondary); }
+
+.insurance-card .number-block { border: 1px solid var(--border); background: var(--surface); }
+.insurance-card .number-value { color: var(--primary); }
+.insurance-card .number-label { color: var(--muted); font-weight: 650; }
+
+.insurance-card.conclusion-card { color: var(--conclusion-text, #fff); background: var(--primary); }
+.insurance-card.conclusion-card .insurance-category-badge,
+.insurance-card.conclusion-card .insurance-category-badge span,
+.insurance-card.conclusion-card .insurance-badge-icon { color: var(--primary); }
+.insurance-card.conclusion-card .insurance-category-badge { background: var(--soft); }
+.insurance-card.conclusion-card .insurance-category-line { background: color-mix(in srgb, var(--soft) 45%, transparent); }
+.insurance-card.conclusion-card .insurance-card-icon { color: var(--primary); background: var(--soft); }
+.insurance-card.conclusion-card .card-title { color: #fff; }
+.insurance-card.conclusion-card .conclusion-panel { padding: 28px 40px; border: 1px solid #ffffff40; background: transparent; }
+.insurance-card.conclusion-card .conclusion-item { border-color: #ffffff40; }
+.insurance-conclusion-brand { position: absolute; right: 70px; bottom: 28px; color: var(--soft); font-size: 24px; font-weight: 650; letter-spacing: -.025em; }

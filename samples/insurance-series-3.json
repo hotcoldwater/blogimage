@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.1",
+  "task": "render_series",
+  "theme": "insurance",
+  "post_title": "보험 기초 3장 예제",
+  "large_category": "보험",
+  "small_category": "보험기초",
+  "canvas": { "width": 1080, "height": 1080 },
+  "cards": [
+    {
+      "card_no": 1,
+      "role": "cover",
+      "layout": "cover",
+      "image_name": "01_cover.png",
+      "insert_token": "[[IMAGE_01:COVER:01_cover.png]]",
+      "title": ["보험을 이해하는", "첫 번째 기준"],
+      "subtitle": ["보장과 보험료를", "차분히 확인합니다"]
+    },
+    {
+      "card_no": 2,
+      "role": "summary",
+      "layout": "bullet_3",
+      "image_name": "02_summary.png",
+      "insert_token": "[[IMAGE_02:SUMMARY:02_summary.png]]",
+      "title": ["먼저 확인할", "핵심 세 가지"],
+      "items": ["현재 보장을 확인합니다", "보험료 조건을 살펴봅니다", "보장기간을 비교합니다"]
+    },
+    {
+      "card_no": 3,
+      "role": "conclusion",
+      "layout": "conclusion",
+      "image_name": "03_conclusion.png",
+      "insert_token": "[[IMAGE_03:CONCLUSION:03_conclusion.png]]",
+      "title": ["보험은 조건을", "함께 봐야 합니다"],
+      "body": ["한 가지 기준보다", "전체 조건을 확인하세요"]
+    }
+  ]
+}

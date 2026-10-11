@@ -1,0 +1,14 @@
+node_modules/
+BlogImage.app/
+output/*
+!output/.gitkeep
+test-output/
+preview/index.html
+reports/*.json
+reports/*.md
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+~$*.xlsx

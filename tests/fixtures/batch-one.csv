@@ -1,0 +1,2 @@
+id,post_title,post_url,large_category,small_category,cover_title,subtitle,theme,icon,file_name,generation_status,upload_status,notes
+CSV-001,CSV 대량 생성 테스트,,투자,투자기초,"금리 25bp,|몇 퍼센트일까?",bp와 %포인트를|헷갈리지 않는 법,investment,lightbulb,CSV-001.png,,,

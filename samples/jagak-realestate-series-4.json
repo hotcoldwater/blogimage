@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.1",
+  "task": "render_series",
+  "theme": "jagak",
+  "post_title": "스트레스 DSR 3단계 | 무엇이 바뀌고 주택대출 한도에 어떤 영향을 주나",
+  "large_category": "부동산",
+  "small_category": "부동산제도",
+  "canvas": { "width": 1080, "height": 1080 },
+  "cards": [
+    {
+      "card_no": 1, "role": "cover", "layout": "cover", "icon": "scale", "image_name": "01_cover.png",
+      "insert_token": "[[IMAGE_01:COVER:01_cover.png]]", "title": ["스트레스 DSR 3단계", "무엇이 달라지나"],
+      "subtitle": ["대출 한도에 영향을 주는", "핵심 조건을 정리합니다"]
+    },
+    {
+      "card_no": 2, "role": "summary", "layout": "bullet_3", "icon": "list-checks", "image_name": "02_summary.png",
+      "insert_token": "[[IMAGE_02:SUMMARY:02_summary.png]]", "title": ["핵심 요약"],
+      "items": ["적용 시점 확인", "대상 대출 확인", "개인별 한도 차이 확인"]
+    },
+    {
+      "card_no": 3, "role": "comparison", "layout": "compare_2col", "icon": "arrow-left-right", "image_name": "03_comparison.png",
+      "insert_token": "[[IMAGE_03:COMPARISON:03_comparison.png]]", "title": ["변경 전후 확인 포인트"],
+      "left": { "label": "기존", "items": ["기존 적용 조건", "기존 스트레스 금리"] },
+      "right": { "label": "변경", "items": ["새 적용 조건", "새 스트레스 금리"] }
+    },
+    {
+      "card_no": 4, "role": "conclusion", "layout": "conclusion", "icon": "circle-check", "image_name": "04_conclusion.png",
+      "insert_token": "[[IMAGE_04:CONCLUSION:04_conclusion.png]]", "title": ["대출 한도는", "개인 조건별로 달라집니다"],
+      "body": ["시행일·대출 종류·소득 조건을", "함께 확인해야 합니다"]
+    }
+  ]
+}

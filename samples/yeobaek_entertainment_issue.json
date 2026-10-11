@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.1",
+  "task": "render_series",
+  "theme": "yeobaek",
+  "post_title": "여백 연예·콘텐츠 연예이슈 3장 예제",
+  "large_category": "연예·콘텐츠",
+  "small_category": "연예이슈",
+  "canvas": { "width": 1080, "height": 1080 },
+  "cards": [
+    {
+      "card_no": 1,
+      "role": "cover",
+      "layout": "cover",
+      "image_name": "01_cover.png",
+      "insert_token": "[[IMAGE_01:COVER:01_cover.png]]",
+      "title": ["연예이슈를 읽는", "새로운 기준"],
+      "subtitle": ["확인된 사실과 흐름을", "차분하게 살펴봅니다"]
+    },
+    {
+      "card_no": 2,
+      "role": "summary",
+      "layout": "bullet_3",
+      "image_name": "02_summary.png",
+      "insert_token": "[[IMAGE_02:SUMMARY:02_summary.png]]",
+      "title": ["핵심 흐름", "세 가지"],
+      "items": ["공개된 내용을 확인합니다", "쟁점의 맥락을 살펴봅니다", "사실과 해석을 구분합니다"]
+    },
+    {
+      "card_no": 3,
+      "role": "conclusion",
+      "layout": "conclusion",
+      "image_name": "03_conclusion.png",
+      "insert_token": "[[IMAGE_03:CONCLUSION:03_conclusion.png]]",
+      "title": ["화제보다", "사실을 봅니다"],
+      "body": ["확인된 정보를 기준으로", "이슈의 맥락을 정리합니다"]
+    }
+  ]
+}

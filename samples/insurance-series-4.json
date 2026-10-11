@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.1",
+  "task": "render_series",
+  "theme": "insurance",
+  "post_title": "갱신형 보험이란? 보험료가 달라지는 구조와 확인할 점",
+  "large_category": "보험",
+  "small_category": "보험기초",
+  "canvas": { "width": 1080, "height": 1080 },
+  "cards": [
+    {
+      "card_no": 1,
+      "role": "cover",
+      "layout": "cover",
+      "icon": "book-open",
+      "image_name": "01_cover.png",
+      "insert_token": "[[IMAGE_01:COVER:01_cover.png]]",
+      "title": ["갱신형 보험이란?", "보험료 구조부터 이해하기"],
+      "subtitle": ["보험료가 왜 달라질 수 있는지", "쉽게 정리합니다"]
+    },
+    {
+      "card_no": 2,
+      "role": "summary",
+      "layout": "bullet_3",
+      "icon": "list-checks",
+      "image_name": "02_summary.png",
+      "insert_token": "[[IMAGE_02:SUMMARY:02_summary.png]]",
+      "title": ["갱신형 보험 핵심 요약"],
+      "items": ["갱신 주기마다 보험료 재산정 가능", "갱신 조건과 보장기간 확인", "비갱신형과 단순 우열 비교 금지"]
+    },
+    {
+      "card_no": 3,
+      "role": "comparison",
+      "layout": "compare_2col",
+      "icon": "arrow-left-right",
+      "image_name": "03_comparison.png",
+      "insert_token": "[[IMAGE_03:COMPARISON:03_comparison.png]]",
+      "title": ["갱신형과 비갱신형"],
+      "left": { "label": "갱신형", "items": ["갱신 때 보험료 변동 가능", "초기 보험료 구조 확인"] },
+      "right": { "label": "비갱신형", "items": ["정해진 납입 구조 중심", "전체 납입 조건 확인"] }
+    },
+    {
+      "card_no": 4,
+      "role": "conclusion",
+      "layout": "conclusion",
+      "icon": "circle-check",
+      "image_name": "04_conclusion.png",
+      "insert_token": "[[IMAGE_04:CONCLUSION:04_conclusion.png]]",
+      "title": ["무조건 좋고 나쁜 구조는 없습니다"],
+      "body": ["갱신 여부만 보지 말고", "보험료·보장기간·현재 보장을 함께 확인하세요"]
+    }
+  ]
+}

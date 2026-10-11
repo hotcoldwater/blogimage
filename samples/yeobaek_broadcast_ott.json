@@ -1,0 +1,38 @@
+{
+  "schema_version": "2.1",
+  "task": "render_series",
+  "theme": "yeobaek",
+  "post_title": "여백 연예·콘텐츠 방송·OTT 3장 예제",
+  "large_category": "연예·콘텐츠",
+  "small_category": "방송·OTT",
+  "canvas": { "width": 1080, "height": 1080 },
+  "cards": [
+    {
+      "card_no": 1,
+      "role": "cover",
+      "layout": "cover",
+      "image_name": "01_cover.png",
+      "insert_token": "[[IMAGE_01:COVER:01_cover.png]]",
+      "title": ["방송과 OTT", "흐름을 읽다"],
+      "subtitle": ["프로그램과 플랫폼의 변화를", "차분하게 살펴봅니다"]
+    },
+    {
+      "card_no": 2,
+      "role": "summary",
+      "layout": "bullet_3",
+      "image_name": "02_summary.png",
+      "insert_token": "[[IMAGE_02:SUMMARY:02_summary.png]]",
+      "title": ["핵심 흐름", "세 가지"],
+      "items": ["공개 일정을 확인합니다", "시청 흐름을 살펴봅니다", "플랫폼 변화를 정리합니다"]
+    },
+    {
+      "card_no": 3,
+      "role": "conclusion",
+      "layout": "conclusion",
+      "image_name": "03_conclusion.png",
+      "insert_token": "[[IMAGE_03:CONCLUSION:03_conclusion.png]]",
+      "title": ["작품과 플랫폼", "함께 봅니다"],
+      "body": ["방송과 OTT를 함께 보면", "콘텐츠의 흐름이 보입니다"]
+    }
+  ]
+}

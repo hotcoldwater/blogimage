@@ -1,0 +1,51 @@
+{
+  "schema_version": "2.0",
+  "task": "render_series",
+  "post_title": "4장 예제 | 숫자로 보는 변화",
+  "large_category": "IT",
+  "small_category": "AI뉴스",
+  "canvas": { "width": 1080, "height": 1080 },
+  "cards": [
+    {
+      "card_no": 1,
+      "role": "cover",
+      "layout": "cover",
+      "image_name": "01_cover.png",
+      "insert_token": "[[IMAGE_01:COVER:01_cover.png]]",
+      "title": ["숫자로 읽는", "기술의 변화"],
+      "subtitle": ["결과보다 먼저", "흐름을 살펴본다"]
+    },
+    {
+      "card_no": 2,
+      "role": "summary",
+      "layout": "numbers",
+      "image_name": "02_numbers.png",
+      "insert_token": "[[IMAGE_02:SUMMARY:02_numbers.png]]",
+      "title": ["변화를 보여주는", "세 가지 숫자"],
+      "numbers": [
+        { "value": "2배", "label": "처리 속도 변화" },
+        { "value": "40%", "label": "활용 범위" },
+        { "value": "3년", "label": "관찰 기간" }
+      ]
+    },
+    {
+      "card_no": 3,
+      "role": "cause_effect",
+      "layout": "cause_effect",
+      "image_name": "03_cause_effect.png",
+      "insert_token": "[[IMAGE_03:CAUSE_EFFECT:03_cause_effect.png]]",
+      "title": ["변화의 원인과", "이어지는 결과"],
+      "causes": ["연산 자원 확대", "도구 접근성 개선"],
+      "effects": ["활용 분야 증가", "업무 방식 변화"]
+    },
+    {
+      "card_no": 4,
+      "role": "conclusion",
+      "layout": "conclusion",
+      "image_name": "04_conclusion.png",
+      "insert_token": "[[IMAGE_04:CONCLUSION:04_conclusion.png]]",
+      "title": ["숫자의 방향을", "함께 봐야 한다"],
+      "items": ["기준을 확인한다", "기간을 비교한다", "맥락을 함께 읽는다"]
+    }
+  ]
+}

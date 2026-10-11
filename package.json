@@ -1,0 +1,30 @@
+{
+  "name": "naver-blog-cover-renderer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "XLSX/CSV batch, JSON single, and themed 1080x1080 JSON series blog image renderer",
+  "scripts": {
+    "render": "node --import tsx src/renderBatch.ts",
+    "render:single": "node --import tsx src/renderSingle.ts",
+    "render:clipboard": "pbpaste | node --import tsx src/renderSingle.ts --stdin",
+    "build:app": "./macos/build-app.sh",
+    "validate": "node --import tsx src/validate.ts",
+    "preview": "node --import tsx src/preview.ts",
+    "typecheck": "tsc --noEmit",
+    "test:single-schema": "node --import tsx src/singleInputSchema.test.ts",
+    "test:series-schema": "node --import tsx src/seriesInputSchema.test.ts",
+    "test:series-render": "node --import tsx src/seriesRender.test.ts",
+    "test:config": "node --import tsx src/config.test.ts",
+    "test": "npm run typecheck && npm run test:config && npm run test:single-schema && npm run test:series-schema && npm run test:series-render"
+  },
+  "dependencies": {
+    "playwright": "1.62.1",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.3",
+    "tsx": "4.23.1",
+    "typescript": "5.9.3"
+  }
+}
